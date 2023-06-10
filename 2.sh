@@ -17,7 +17,7 @@ if [ -d "$modified_dir" ]; then
     for file in *.bak; do
         if [ -f "$file" ]; then
             # Append current date and time to the file
-            mv "$file" "${file%.bak}_$(date +"%Y%m%d%H%M%S").bak"
+            mv "$file" "${file%.bak}_$(date +"%d%m%Y%H%M%S").bak"
         fi
     done
     
